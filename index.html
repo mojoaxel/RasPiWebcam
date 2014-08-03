@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery-1.10.2.min.js" ></script>
+<script>
+$( document ).ready(function() {
+  setInterval(function() {
+    var timestamp = new Date().getTime();
+    $('img').attr('src', 'image.jpg' + '#' + timestamp);
+    //$('#timestamp').text(new Date(timestamp));
+  }, 5000);
+});
+</script>
+</head>
+<body style="margin:0px;background:#000;">
+<!-- div id="timestamp" style="position:absolute; right:20px; top:20px; color:red;">-</div -->
+<center>
+<img width="100%" src="image.jpg" id="org" />
+</center>
+</body>
